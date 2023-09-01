@@ -28,7 +28,7 @@ class Database:
 
         incomplete_tasks = self.cursor.execute("SELECT id, task, due_date FROM tasks WHERE completed = 0").fetchall()
 
-        return incomplete_tasks , complete_tasks
+        return complete_tasks, incomplete_tasks
 
 
     '''UPDATING the tasks status'''
